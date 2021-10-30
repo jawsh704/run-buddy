@@ -11,23 +11,23 @@
      
      <header>
          <h1>
-             <a href="/">RUN BUDDY</a>
+            <a href="/">RUN BUDDY</a>
          </h1>
         <nav>
      <!-- Unordered list element -->
      <ul>
          <!-- List item element -->
-        <li>
+         <li>
             <!-- anchor element -->
             <a href="#what-we-do">What We Do</a>
-        </li>
-        <li>
+         </li>
+         <li>
             <a href="#what-you-do">What You Do</a>
         </li>
         <li>
             <a href="#your-trainers">Your Trainers</a>
-        </li>
-        <li>
+         </li>
+         <li>
             <a href="#reach-out">Reach Out</a>
         </li>
      </ul>  
@@ -35,12 +35,76 @@
      </header>
 
      <!-- hero/jumbotron -->
-     <section>
+     <section class="hero">
+       <div class="hero-form">
+            <h3>Get Started Today</h3>
+            <p> Fill out this form and one of our trainers will schedule a consult</p>
+        <!-- Add form element -->
+       <section>
+        <form>
+            <label for="name">Egernter full name</label>
+            <input type="text" placeholder="Yor Name" name="name" id="form-input" />
+
+            <label for="email">Enter email address</address></label>
+            <input type="text" placeholder="Email address" name="email" id="form-input" />
+
+            <label for="phone">Enter telephone number</label>
+            <input type="text" placeholder="Phone Number" name="phone" id="form-input" />
+            <p>
+                Have you worked out with a trainer before?
+                <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                <label for="trainer-yes">yes</label>
+                <input type="radio" name="trainer-confirm" id="trainer-no" />
+                <label for="trainer-no">no</label>
+            </p>
+            <p>
+                <label for="checkbox" >
+                    I acknowledge that i am at least 18 years of age.
+                </label>
+                <input type="checkbox" name="age-confirm" id="checkbox" />
+            </p>
+            <button type="submit">
+                Get running!
+            </button>
+        </form> 
+      </div>
      </section>
-     
      <!-- "what we do"-->
-     <section>
+     <section id="what-we-do">
+         <h2>What We Do</h2>
+         <p>
+             buthcer selfies chambray shabby chic gentrify readymade yr echo park xoxo tumblr normcore banksy direct trade blue baottle chillwave you probably haven't heard of them single-origin coffe vice fanny pack fixie odd future austin fingerstache pickled twee synth wes anderson thundrcats viral bitters flannel meggings narwhal marfa schlitz sustainable intelligentsia umami deep v craft
+         </p>
+     </section>
+
+     <!-- "What you do" -->
+     <section id="what=you-do">
          <h2>What You Do</h2>
+
+         <div>
+             <!--insert this img element -->
+             <img src="./assets/image/step-1.svg" alt="" />
+             <h3>Step 1: Fill Out the form above.</h3>
+             <p>You're already here, so why not?</p>
+         </div>
+
+         <div>
+             <img src="assets/image/step-2.svg" />
+             <h3>Step 2: Consult with one of our trainers.</h3>
+             <p>Are you here to build muscle, lose weight, or just feel good?</p>
+         </div>
+
+         <div>
+             <img src="assets/image/step-3.svg" />
+             <h3>Step 3: Get Running.</h3>
+             <p>Hit the Ground running (literally) once your trainer lays out your plan.</p>
+         </div>
+
+         <div>
+             <img src="./assets/image/step-4.svg" />
+             <h3>Step 4: See Results.</h3>
+             <p>Bi-Weekly checkins with your trainer will keep you focused</p>
+         </div>
      </section>
      
      <!-- "meet the trainers"-->
@@ -56,6 +120,10 @@
     <!-- footer -->
     <footer>
         <h2>❤️ Made with love by Run Buddy.</h2>
+        <div>
+            <a href="#">Read Our Policy</a><br />
+            &copy; 2019 Run Buddy, Inc.
+        </div>
     </footer>
 
     </body>
